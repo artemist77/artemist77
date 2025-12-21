@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMETEO</title>
+    <link rel="stylesheet" href="../STYLE/index_style.css">
+    <link rel="shortcut icon" href="../MEDIA/icons8-nuvola-50.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+    <div id="caricamento_comuni">
+    </div>
+    <div id="form_ricerca">
+        <form action="" method="get">
+            <!--<select name="regioni" id="regioni"></select>
+            <select name="province" id="province"></select>-->
+            <input type="text" id="searchComune" placeholder="Cerca comune..." name="reicerca_testuale">
+            <select name="comuni" id="comuni"></select>
+            <input type="submit" value="cerca">
+        </form>
+
+    </div>
+    <!-- FORM PROVA DI RICERCA-->
+
+    <div id="map_div">
+        <div id="map" style="height: 500px; width: 800px;"></div>
+    </div>
+    <!-- SEZIONE INFO METEO -->
+    <div id="infoMeteo">
+        <div id="div_stti_meteo">
+            <h3 id="titolo_prev_meteo">QUI SOTTO VERRANNO MOSTRATE LE PREVISONI METEO </h3>
+            <p id="sottotitolo_prev_meteo">le previsoni sono fornite solo per 7 giorni</p>
+        </div>
+        <!-- METEO ATTUALE -->
+        <div id="datiMeteo" class="meteo-attuale"></div>
+
+        <!-- PREVISIONI GIORNALIERE -->
+        <div id="altriDati" class="previsioni-container"></div>
+
+    </div>
+    <script type="module" src="../SCRIPT/index_script.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="../SCRIPT/implementazione_mappa.js"></script>
+</body>
+
+</html>
