@@ -4,7 +4,6 @@
 // ======================================
 
 import { geocodeComune } from "./request.js";
-//import { getDatiMeteo } from "./meteo_request.js";
 import { getDatiMeteo_d } from "./meteo_request_def.js";
 
 const URL_COMUNI = "https://raw.githubusercontent.com/matteocontrini/comuni-json/master/comuni.json";
@@ -93,6 +92,7 @@ form.addEventListener("submit", function (e) {
 
 
 })
+
 
 
 
